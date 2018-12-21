@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.imagecropping.Crop">
+
+    <com.theartofdev.edmodo.cropper.CropImageView
+        android:id="@+id/cropImageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="top">
+    </com.theartofdev.edmodo.cropper.CropImageView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/cropOne"
+            android:background="@android:color/white"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_height="wrap_content"
+            android:text="1:1" />
+
+        <Button
+            android:id="@+id/cropTwo"
+            android:background="@android:color/white"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_height="wrap_content"
+            android:text="4:3" />
+
+        <Button
+            android:id="@+id/cropThree"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:layout_width="0dp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_height="wrap_content"
+            android:text="16:9" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/cropFive"
+            android:background="@android:color/white"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_height="wrap_content"
+            android:text="3:2" />
+
+        <Button
+            android:id="@+id/cropFour"
+            android:background="@android:color/white"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_height="wrap_content"
+            android:text="Custom" />
+
+        <Button
+            android:id="@+id/crop"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:layout_width="0dp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_height="wrap_content"
+            android:text="Crop" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
